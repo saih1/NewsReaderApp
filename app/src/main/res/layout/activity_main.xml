@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btn1"
+            android:text="Top Stories"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content">
+        </Button>
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="wrap_content">
+        </Space>
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btn2"
+            android:text="New Stories"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content">
+        </Button>
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="wrap_content">
+        </Space>
+
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btn3"
+            android:text="best stories"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content">
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:foregroundGravity="center">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/newsRecyclerView"
+            android:background="?attr/selectableItemBackground"
+            android:backgroundTint="@android:color/background_dark"
+            android:clickable="true"
+            android:longClickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="30dp">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+</LinearLayout>
